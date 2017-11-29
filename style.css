@@ -1,0 +1,211 @@
+#content{
+	position:relative;
+	height:454px;
+}
+#content .gradient-mask{
+	z-index: 897;
+    width: 100%;
+    height:454px;
+    background: transparent;
+    position: absolute;
+    background-image: linear-gradient(-175deg, #004396 0%,#00469C 10%,#0075C2 50%, #00B0EC  100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#004396, endColorstr=#00B0EC);
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#004396, endColorstr=#00B0EC);
+}
+ .banner{
+	z-index:900;
+	visibility: visible;
+}
+ .banner img{
+	z-index:900;
+	visibility: visible;
+}
+
+.banner{
+	position: relative;
+	min-width: 745px;
+	max-width: 745px;
+	height:454px;
+	left:25%;;
+	margin-right:auto;
+	top:-20px;
+	zoom:1;	
+    transform-style: preserve-3d;
+	transition: all 0.15s ease-out;
+}
+.layer{
+	position:absolute;
+	}
+.hover-image{
+	top:20px;
+}
+@-moz-keyframes slide-80{
+	0%{
+		opacity: 0;
+		-moz-transform: translate3d(0,80px,0);
+		transform: translate3d(0,80px,0);
+	}
+	100%{
+		opacity: 1;
+		-moz-transform: translateZ(0);
+		transform: translateZ(0);
+	}
+}
+@-webkit-keyframes slide-80{
+	0%{
+		opacity: 0;
+		-webkit-transform: translate3d(0,80px,0);
+		transform: translate3d(0,80px,0);
+				}
+	100%{
+		opacity: 1;
+		-webkit-transform: translateZ(0);
+		transform: translateZ(0);
+				}
+	}
+@-ms-keyframes slide-80{
+	0%{
+		opacity: 0;
+		-ms-transform: translate3d(0,80px,0);
+		transform: translate3d(0,80px,0);
+				}
+	100%{
+		opacity: 1;
+		-ms-transform: translateZ(0);
+		transform: translateZ(0);
+				}
+	}
+			
+@keyframes slide-80{
+	0%{
+		opacity: 0;	
+		transform: translate3d(0,80px,0);
+				}
+	100%{
+		opacity: 1;
+		transform: translateZ(0);
+				}
+	}
+@-moz-keyframes slide-40{
+	0%{
+		opacity: 0;
+		-moz-transform: translate3d(0,40px,0);
+		transform: translate3d(0,40px,0);
+	           }
+	100%{
+		opacity: 1;
+		-moz-transform: translateZ(0);
+		transform: translateZ(0);
+			   }
+	}
+@-webkit-keyframes slide-40{
+	0%{
+		opacity: 0;
+		-webkit-transform: translate3d(0,40px,0);
+		transform: translate3d(0,40px,0);
+	           }
+	100%{
+		opacity: 1;
+		-webkit-transform: translateZ(0);
+		transform: translateZ(0);
+			   }
+	}
+@-ms-keyframes slide-40{
+	0%{
+		opacity: 0;
+		-ms-transform: translate3d(0,40px,0);
+		transform: translate3d(0,40px,0);
+	           }
+	100%{
+		opacity: 1;
+		-ms-transform: translateZ(0);
+		transform: translateZ(0);
+			   }
+	}
+@keyframes slide-40{
+	0%{
+		opacity: 0;
+		-webkit-transform: translate3d(0,40px,0);
+		transform: translate3d(0,40px,0);
+	           }
+	100%{
+		opacity: 1;
+		-webkit-transform: translateZ(0);
+		transform: translateZ(0);
+			   }
+	}
+@-moz-keyframes slide-60{
+	0%{
+		opacity: 0;
+		-moz-transform: translate3d(0,60px,0);
+		transform: translate3d(0,60px,0);
+	  }
+	100%{
+		opacity: 1;
+		-moz-transform: translateZ(0);
+		transform: translateZ(0);
+		}
+}
+@-webkit-keyframes slide-60{
+	0%{
+		opacity: 0;
+		-webkit-transform: translate3d(0,60px,0);
+		transform: translate3d(0,60px,0);
+	  }
+	100%{
+		opacity: 1;
+		-webkit-transform: translateZ(0);
+		transform: translateZ(0);
+	  }
+}
+@-ms-keyframes slide-60{
+	0%{
+		opacity: 0;
+		-ms-transform: translate3d(0,60px,0);
+		transform: translate3d(0,60px,0);
+	  }
+	100%{
+		opacity: 1;
+		-ms-transform: translateZ(0);
+		transform: translateZ(0);
+		}
+	}
+@keyframes slide-60{
+	0%{
+		opacity: 0;
+		-webkit-transform: translate3d(0,60px,0);
+		transform: translate3d(0,60px,0);
+	 }
+	100%{
+		opacity: 1;
+		-webkit-transform: translateZ(0);
+		transform: translateZ(0);
+		}
+	}
+.bimg:first-of-type{
+	-ms-transform:translateZ(50px); 	/* IE 9 */
+    -moz-transform:translateZ(50px); 	/* Firefox */
+    -webkit-transform:translateZ(50px); /* Safari 和 Chrome */
+    transform:translateZ(50px);
+	z-index:900;
+	-webkit-animation: slide-80 .8s cubic-bezier(0.4,0,0.2,1) 2s 1;
+	animation: slide-80 2s cubic-bezier(0.8,0,0.2,1) 0s 1;
+	}
+.bimg:nth-of-type(2){
+	-ms-transform:translateZ(100px); 	/* IE 9 */
+    -moz-transform:translateZ(100px); 	/* Firefox */
+    -webkit-transform:translateZ(100px); /* Safari 和 Chrome */
+    transform:translateZ(100px);
+	z-index:900;
+	-webkit-animation: slide-40 .8s cubic-bezier(0.4,0,0.2,1) 2s 1;
+	animation: slide-40 2s cubic-bezier(0.8,0,0.2,1) 0s 1;
+	}
+.bimg:nth-of-type(3){
+	-ms-transform:translateZ(150px); 	/* IE 9 */
+    -moz-transform:translateZ(150px); 	/* Firefox */
+    -webkit-transform:translateZ(150px); /* Safari 和 Chrome */
+    transform:translateZ(150px);
+	z-index:900;
+	-webkit-animation: slide-60 .8s cubic-bezier(0.4,0,0.2,1) 2s 1;
+	animation: slide-60 2s cubic-bezier(0.8,0,0.2,1) 0s 1;
+}
