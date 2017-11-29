@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div id="content">
+			<div class="gradient-mask"></div>
+			<div class="banner" >
+	  	            <div class="layer bimg hover-image no-transition">
+	  					<img src="base.png" alt />
+	  				</div>
+	  				<div class="layer bimg hover-image no-transition">
+	  					<img src="dec.png" alt />
+	  				</div>
+	  				<div class="layer bimg hover-image no-transition">
+	  					<img src="ball.png" alt/>
+	  				</div>
+	  		</div>	
+		</div>
+	</body>
+	<script src="jquery.js"></script>
+	<script src="myRotate.js"></script>
+	<script>
+		$(function(){
+			$(".banner").myRotate({
+				x:-25,
+				y:20
+			});
+		});
+	</script>
+</html>
